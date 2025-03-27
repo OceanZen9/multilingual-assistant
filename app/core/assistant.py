@@ -44,6 +44,7 @@ class MultilingualAssistant:
 
             response = self.client.chat.completions.create(
                 model=self.model,
+                messages=self.conversation_history,
                 temperature=temperature,
                 max_tokens=max_tokens,
             )
@@ -56,9 +57,9 @@ class MultilingualAssistant:
         
     def clear_history(self,keep_system=True):
         """清空对话历史，可选保留系统消息"""
-        if keep_system and self.comversation_history:
+        if keep_system and self.conversation_history:
             system_message = self.conversation_history[0]
-            self.conversdation_history = [system_message]
+            self.conversation_history = [system_message]
         else:
             self.conversation_history = []
 
@@ -73,7 +74,7 @@ class MultilingualAssistant:
                 stream=True
             )
 
-            #手机完整响应内容
+            #收集完整响应内容
             full_content = ""
 
             #返回生成器
