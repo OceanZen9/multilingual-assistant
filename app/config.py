@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #API设置
-API_KEY = os.getenv("Deepseek_API_KEY","sk-de5658f5654a41788045ebc984644728")
+API_KEY = os.getenv("Deepseek_API_KEY")
 BASE_URL = os.getenv("Deepseek_BASE_URL","https://api.deepseek.com")
 MODE_NAME = os.getenv("MODE_NAME","deepseek-chat")
 
@@ -18,16 +18,16 @@ DEFAULT_TEMPRATURE = 0.7
 DEFAULT_MAX_TOKENS = 1000
 
 #支持的语言
-SUPPORTED_LANGUAGES = [
-    "中文"："zh",
-    "英文"："en",
-    "法文"："fr",
-    "德文"："de",
-    "西班牙文"："es",
-    "俄文"："ru",
-    "日文"："ja",
-    "韩文"："ko",
-]
+SUPPORTED_LANGUAGES = {
+    "中文": "zh",
+    "英文": "en",
+    "法文": "fr",
+    "德文": "de",
+    "西班牙文": "es",
+    "俄文": "ru",
+    "日文": "ja",
+    "韩文": "ko",
+}
 
 # 支持的文本风格
 TEXT_STYLES = {
