@@ -173,3 +173,25 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 .env
+
+# 环境变量文件
+.env
+
+# Python虚拟环境
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 分发/打包
+dist/
+build/
+*.egg-info/
+
+# 本地开发配置
+.idea/
+.vscode/
+
+# 操作系统文件
+.DS_Store
+Thumbs.db

@@ -10,8 +10,8 @@ load_dotenv()
 
 #API设置
 API_KEY = os.getenv("Deepseek_API_KEY")
-BASE_URL = os.getenv("Deepseek_BASE_URL","https://api.deepseek.com")
-MODE_NAME = os.getenv("MODE_NAME","deepseek-chat")
+BASE_URL = os.getenv("Deepseek_BASE_URL")
+MODE_NAME = os.getenv("MODE_NAME")
 
 #默认参数
 DEFAULT_TEMPRATURE = 0.7
