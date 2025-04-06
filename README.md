@@ -20,7 +20,7 @@
 
 1. 克隆仓库
 ```bash
-git clone https://github.com/yourusername/multilingual-assistant.git
+git clone https://github.com/Oceanzen9/multilingual-assistant.git
 cd multilingual-assistant
 ```
 
